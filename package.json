@@ -18,11 +18,11 @@
   "homepage": "https://github.com/ayush-lal/Test#readme",
   "devDependencies": {
     "electron": "^11.0.2",
-    "electron-builder": "^22.9.1",
-    "build": "electron-builder build --mac --win --publish never",
-    "deploy": "electron-builder build --mac --win --publish always"
+    "electron-builder": "^22.9.1"
   },
   "dependencies": {
     "electron-updater": "^4.3.5"
-  }
+  },
+  "build": "electron-builder build --mac --win --publish never",
+  "deploy": "electron-builder build --mac --win --publish always"
 }
