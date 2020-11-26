@@ -1,6 +1,6 @@
 {
   "name": "electron-test",
-  "version": "8.0.0",
+  "version": "2.0.0",
   "description": "**Clone and run for a quick way to see Electron in action.**",
   "main": "main.js",
   "scripts": {
@@ -23,7 +23,7 @@
     "publish": [
       {
         "provider": "generic",
-        "url": "http://192.168.20.4:8888/download/"
+        "url": "http://noctools/"
       }
     ],
     "appId": "test.electronupdatergenericexample"
