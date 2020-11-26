@@ -1,29 +1,31 @@
 {
   "name": "electron-test",
-  "version": "3.0.0",
+  "version": "8.0.0",
   "description": "**Clone and run for a quick way to see Electron in action.**",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "electron-builder build --mac --win --publish never",
-    "deploy": "electron-builder build --mac --win --publish always"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ayush-lal/Test.git"
+    "deploy": "electron-builder build --win"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ayush-lal/Test/issues"
-  },
-  "homepage": "https://github.com/ayush-lal/Test#readme",
   "devDependencies": {
     "electron": "^11.0.2",
     "electron-builder": "^22.9.1"
   },
   "dependencies": {
+    "electron-log": "^4.3.0",
     "electron-updater": "^4.3.5"
+  },
+  "build": {
+    "publish": [
+      {
+        "provider": "generic",
+        "url": "http://192.168.20.4:8888/download/"
+      }
+    ],
+    "appId": "test.electronupdatergenericexample"
   }
 }
